@@ -5,6 +5,8 @@ import axios from "axios";
 import { toast } from "react-toastify";
 import { Context } from "../main";
 
+
+
 const Navbar = () => {
   const [show, setShow] = useState(false);
   const { isAuthenticated, setIsAuthenticated } = useContext(Context);
@@ -29,6 +31,7 @@ const Navbar = () => {
     navigateTo("/login");
   };
 
+
   return (
     <>
       <nav className={"container"}>
@@ -46,6 +49,7 @@ const Navbar = () => {
             <Link to={"/about"} onClick={() => setShow(!show)}>
               About Us
             </Link>
+            
           </div>
           {isAuthenticated ? (
             <button className="logoutBtn btn" onClick={handleLogout}>
@@ -66,3 +70,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

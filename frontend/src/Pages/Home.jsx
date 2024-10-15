@@ -9,11 +9,12 @@ const Home = () => {
     <>
       <Hero
         title={
-          "Welcome to MedCare | Your Trusted Healthcare Partner"
+          "Welcome to MedCare , Your Trusted Healthcare Partner"
         }
         imageUrl={"/hero.png"}
       />
       <Biography imageUrl={"/about.png"} />
+      
       <Departments />
       <MessageForm />
     </>
